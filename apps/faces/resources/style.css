@@ -1,0 +1,58 @@
+.stretch {
+  width: 100%;
+  height: 100%;
+}
+
+div.face {
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+  background: #fff static_url('brick.png') no-repeat;
+  z-index: 50;
+  padding: 4px;
+  color: #fff;
+  font: normal, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+div.face-name {
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 10px 0 10px;
+  width: 175px;
+  height: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;    
+	font-size: 15px;
+	line-height: 22px;
+	color: #fff;
+}
+
+div.face-company {
+  text-align: right;
+  color: #CCC;
+  font-weight: normal;
+  font-size: 12px;
+	width: 175px;
+	padding: 0 10px;
+}
+
+div.face-bottom-overlay {
+	background: transparent static_url('face_overlay_background.png');
+	height: 50px;
+	left: -4px;
+	position: relative;
+	top: 146px;
+	width: 199px;
+	z-index: -1;
+}
+
+div.face-background {
+  width: 195px;
+  height: 195px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -10;
+}
