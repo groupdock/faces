@@ -59,7 +59,7 @@ put '/person/:id' do
   halt(404, 'Not Found') if person.nil?
   
   json = JSON.parse(request.body.read) rescue nil
-  new_person = { :guid => "/person/#{person_id}",
+  new_person = { :guid => "/person/#{params[:id]}",
              :name => json['name'], 
              :company => json['company'], 
              :website => json['website'],                           
