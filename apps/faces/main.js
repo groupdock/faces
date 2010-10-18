@@ -21,6 +21,9 @@ Faces.main = function main() {
 
   // Step 2. Set the content property on your primary controller.
   // This will make your app come alive!
+  var query = SC.Query.local(Faces.Person);
+  var people = Faces.store.find(query);
+  Faces.peopleController.set('content', people);
 
   // TODO: Set the content property on your primary controller
   // ex: Faces.contactsController.set('content',Faces.contacts);

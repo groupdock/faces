@@ -36,7 +36,10 @@ Faces.mainPage = SC.Page.design({
       contentView: SC.GridView.design({
         layout: {top: 10, left: 10, right: 10, bottom: 10},
         rowHeight: 200,
-        columnWidth: 200
+        columnWidth: 200,
+        contentBinding: 'Faces.peopleController.arrangedObjects',
+        selectionBinding: 'Faces.peopleController.selection',
+        contentValueKey: 'name'
       })
     })
     
