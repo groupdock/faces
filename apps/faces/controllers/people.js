@@ -24,6 +24,7 @@ Faces.peopleController = SC.ArrayController.create(
   
   submitPerson: function() {
     Faces.getPath('editPage.mainPane').remove();
+    Faces.personController.get('content').commitRecord();
     return YES;
   },
   
