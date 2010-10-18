@@ -13,6 +13,6 @@
 Faces.peopleController = SC.ArrayController.create(
 /** @scope Faces.peopleController.prototype */ {
 
-
+  orderBy: 'name'
 
 }) ;
