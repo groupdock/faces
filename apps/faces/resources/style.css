@@ -6,7 +6,6 @@
 div.face {
   float: left;
   margin-right: 5px;
-  cursor: pointer;
   background: #fff static_url('brick.png') no-repeat;
   z-index: 50;
   padding: 4px;

@@ -43,7 +43,10 @@ Faces.mainPage = SC.Page.design({
         classNames: ['face'],
         contentBinding: 'Faces.peopleController.arrangedObjects',
         selectionBinding: 'Faces.peopleController.selection',
-        exampleView: Faces.FaceView
+        exampleView: Faces.FaceView,
+        target: 'Faces.personController',
+        action: 'visitWebsite',
+        actOnSelect: YES
       })
     })
     

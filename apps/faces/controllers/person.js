@@ -17,5 +17,9 @@ Faces.personController = SC.ObjectController.create(
 
   contentBinding: 'Faces.peopleController.selection',
   contentBindingDefault: SC.Binding.single(),
+  
+  visitWebsite: function() {
+    window.location = this.get('content').get('website');
+  }
 
 }) ;
