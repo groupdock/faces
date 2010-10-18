@@ -19,7 +19,11 @@ Faces.personController = SC.ObjectController.create(
   contentBindingDefault: SC.Binding.single(),
   
   visitWebsite: function() {
-    window.location = this.get('content').get('website');
+    if(this.get('content')) {
+      if (this.get('content').get('website') != '') {
+        window.location = this.get('content').get('website');
+      }
+    }
   }
 
 }) ;
